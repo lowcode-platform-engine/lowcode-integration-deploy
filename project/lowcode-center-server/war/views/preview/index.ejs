@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=schema.title%></title>
+    <!--注入公共的样式-->
+    <%- include('../common/inject-normal-css.ejs') %>
+    <!--注入公共的框架-->
+    <%- include('../common/inject-normal-js.ejs') %>
+    <!--注入业务组件的样式合集-->
+    <!--加载页面的搭建物料-->
+    <%- include('./material-css.ejs') %>
+    <!--注入页面渲染schema-->
+    <script>
+        <%- schemaStr %>
+    </script>
+</head>
+<body<% if (globalStyle) { %> style="<%= globalStyle %>"<% } %>>
+<div id="preview">
+
+</div>
+<!--加载页面的搭建物料-->
+<%- include('./material-js.ejs') %>
+<!--注入页面的渲染逻辑-->
+<%- include('../common/inject-render-js.ejs') %>
+</body>
+</html>

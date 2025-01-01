@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>错误页</title>
+    <!--注入公共的样式-->
+    <%- include('../common/inject-normal-css.ejs') %>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #999;
+        }
+
+        .notfound h1 {
+            font-size: 150px;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .notfound h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .notfound p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .notfound a {
+            color: #999;
+            text-decoration: none;
+            border: 1px solid #999;
+            padding: 10px 20px;
+            border-radius: 2px;
+            font-size: 14px;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .notfound a:hover {
+            color: #fff;
+            background-color: #999;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .notfound {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .notfound h1 {
+                font-size: 100px;
+            }
+
+            .notfound h2 {
+                font-size: 32px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="notfound">
+    <h1>404</h1>
+    <h2>Page not found!</h2>
+    <p>The requested page could not be found.</p>
+</div>
+</body>
+</html>

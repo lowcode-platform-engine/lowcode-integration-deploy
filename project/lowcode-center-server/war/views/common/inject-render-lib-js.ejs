@@ -1,0 +1,17 @@
+<% for(let item of renderCoreMap) { %>
+    <% if(item.main) { %>
+        <% for(let item1 of item.main) { %>
+            <% if(item1) { %>
+                <script crossorigin="anonymous" src="<%= item1 %>"></script>
+            <% } %>
+        <% } %>
+    <% } %>
+
+    <% if(item.style) { %>
+        <% for(let item1 of item.style) { %>
+            <% if(item1) { %>
+                <link rel="stylesheet" crossorigin="anonymous" href="<%= item1 %>" />
+            <% } %>
+        <% } %>
+    <% } %>
+<% } %>

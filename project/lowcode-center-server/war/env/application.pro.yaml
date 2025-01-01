@@ -1,0 +1,47 @@
+serverConfig:
+    connectMicroservice: 3001
+    port: 10009
+    tokenSetTimeOut: 7200
+    globalPrefix: 'lowcode-center-server'
+mysqlConfig:
+    host: ''
+    userName: 'root'
+    password: ''
+    dataBaseName: 'b_lowcode_center_database'
+    port: 30000
+mongodbConfig:
+    host: '127.0.0.1'
+    userName: 'root'
+    port: 7000
+    dataBaseName: ''
+    password: '123456'
+    authSource: 'admin'
+redisConfig:
+    name: 'default'
+    # url: 'redis://:123Asd123Asd@172.27.0.2:7012'
+    url: ''
+    host: 'cd-crs-mz15pu6q.sql.tencentcdb.com'
+    port: 7012
+kafkaConfig:
+    url: ''
+    clientId: ''
+    groupId: ''
+rabbitMQConfig:
+    url: ''
+    name: ''
+    queue: ''
+emailConfig:
+    authPass: 'wrgkarqavxezdece'
+    fromUser: 'push_root_platform@qq.com'
+    user: 'push_root_platform@qq.com'
+# 注册中心
+nacos:
+    file-extension: yml
+    server-addr: ''
+    discovery:
+        namespace: 3d8f5748-31b5-4cca-9efc-0b8c2676479c
+        group: gpt
+serverList:
+    user-center: 'http://115.227.27.240:10004'
+    file-center: '127.0.0.1:10004'
+    application-center: '127.0.0.1:10004'

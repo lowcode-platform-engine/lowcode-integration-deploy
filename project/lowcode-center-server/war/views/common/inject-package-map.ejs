@@ -1,0 +1,8 @@
+<% for(let item of packagesMap) { %>
+    <% if(item.main) { %>
+        <script crossorigin="anonymous" src="<%= item.main %>"></script>
+    <% } %>
+    <% if(item.style) { %>
+        <link rel="stylesheet" crossorigin="anonymous" href="<%= item.style %>" />
+    <% } %>
+<% } %>

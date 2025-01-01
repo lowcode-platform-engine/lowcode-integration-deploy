@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" type="image/svg+xml" href="/lowcode-center-web/icon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><title>管理系统</title><script crossorigin="">import('/lowcode-center-web/assets/index-455b6c01.js').finally(() => {
+            
+    const qiankunLifeCycle = window.moudleQiankunAppLifeCycles && window.moudleQiankunAppLifeCycles['lowcode-center-web'];
+    if (qiankunLifeCycle) {
+      window.proxy.vitemount((props) => qiankunLifeCycle.mount(props));
+      window.proxy.viteunmount((props) => qiankunLifeCycle.unmount(props));
+      window.proxy.vitebootstrap(() => qiankunLifeCycle.bootstrap());
+      window.proxy.viteupdate((props) => qiankunLifeCycle.update(props));
+    }
+  
+          })</script><link rel="stylesheet" href="/lowcode-center-web/assets/index-30129aa6.css"></head><body><div id="app"></div><script>const createDeffer = (hookName) => {
+    const d = new Promise((resolve, reject) => {
+      window.proxy && (window.proxy[`vite${hookName}`] = resolve)
+    })
+    return props => d.then(fn => fn(props));
+  }
+  const bootstrap = createDeffer('bootstrap');
+  const mount = createDeffer('mount');
+  const unmount = createDeffer('unmount');
+  const update = createDeffer('update');
+
+  ;(global => {
+    global.qiankunName = 'lowcode-center-web';
+    global['lowcode-center-web'] = {
+      bootstrap,
+      mount,
+      unmount,
+      update
+    };
+  })(window);</script></body></html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/lowcode-platform/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>低代码引擎</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4440054_t7m46ia31h.css" />
+    <!--<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>-->
+    <!--<script src="https://qiniu.canyuegongzi.xyz/npm/antd-atom-materials/1.0.9/index.umd.js"></script>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.11/dayjs.min.js" integrity="sha512-FwNWaxyfy2XlEINoSnZh1JQ5TRRtGow0D6XcmAWmYCRgvqOUTnzCxPc9uF35u5ZEpirk1uhlPVA19tflhvnW1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/antd/5.19.3/antd.min.js" integrity="sha512-swpiz8Cd4Jvn+rma3fnlpIxp+RDIhihmJgC4QyQPy1L9iAaYTDFF6Lup7NXDJl6WH89cHhsMXIVNMN20ojtFmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/antd@5.19.3/dist/antd.min.js"></script>-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/antd@5.19.3/dist/reset.min.css" rel="stylesheet">-->
+    <!-- <script src="/public/antd/index.umd.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/antd/5.17.0/antd.min.js" integrity="sha512-JPhMsZ2AzsxI88sLrZ/y5U4/BMg1MWXdDNHoRui6hsemPvhZ2Q4ZArmPFJFdurYkwnzY8jo3hyHtCOx8VFatqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.23.0/antd.min.js" integrity="sha512-JPhMsZ2AzsxI88sLrZ/y5U4/BMg1MWXdDNHoRui6hsemPvhZ2Q4ZArmPFJFdurYkwnzY8jo3hyHtCOx8VFatqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+   <!-- <script src="//g.alicdn.com/code/lib/antd/4.23.0/antd.min.js"></script>-->
+    <!--<script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="https://qiniu.canyuegongzi.xyz/lowcode_component/goods/1.0.2/style.css" />
+    <link rel="stylesheet" href="https://qiniu.canyuegongzi.xyz/lowcode_component/header/1.0.1/style.css" />
+    <script>
+      window.__RENDER_PAGE_STATE__ = {
+        "desc": "页面描述",
+        "version": "1.0.0",
+        "id": "7",
+        "favicon": "",
+        "keywords": "",
+        "name": "测试页面",
+        "style": {},
+        "path": "/path",
+        "sceneType": "pc",
+        "title": "页面title",
+        "urlPrefix": "",
+        "pageComps": [
+          {
+            "id": "7",
+            "thumb": "https://qiniu.canyuegongzi.xyz/lowcode_component/test.jpg",
+            "desc": "Header组件-描述",
+            "alias": "Header组件",
+            "name": "Header",
+            "libName": "Header",
+            "author": "Marvin",
+            "compType": "",
+            "sceneType": "h5",
+            "bizCode": "BIZ_FORM_BASE",
+            "latest": "1.0.1",
+            "status": 1,
+            "modal": {
+              "color": "#d40a71",
+              "text": "footer"
+            },
+            "version": "1.0.1",
+            "urls": [
+              "https://qiniu.canyuegongzi.xyz/lowcode_component/header/1.0.1/umd.js",
+              "https://qiniu.canyuegongzi.xyz/lowcode_component/header/1.0.1/style.css"
+            ],
+            "style": {}
+          },
+          {
+            "id": "9",
+            "thumb": "https://qiniu.canyuegongzi.xyz/lowcode_component/test.jpg",
+            "desc": "商品列表组件-描述",
+            "alias": "GoodsList组件",
+            "name": "GoodsList",
+            "libName": "GoodsList",
+            "author": "Marvin",
+            "compType": "",
+            "sceneType": "pc",
+            "bizCode": "BIZ_FORM_BASE",
+            "latest": "1.0.2",
+            "status": 1,
+            "modal": {
+              "items": [
+                {
+                  "desc": "灌灌灌灌灌",
+                  "name": "书籍-value",
+                  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_EO5dnPA48AXQTzu5D1BzTwtVo2SflzB6iKlr3U-KVlzLFvWdyJsZkg9Ug&s"
+                },
+                {
+                  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_EO5dnPA48AXQTzu5D1BzTwtVo2SflzB6iKlr3U-KVlzLFvWdyJsZkg9Ug&s",
+                  "desc": "哈哈哈哈",
+                  "name": "笔记本-value"
+                },
+                {
+                  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_EO5dnPA48AXQTzu5D1BzTwtVo2SflzB6iKlr3U-KVlzLFvWdyJsZkg9Ug&s",
+                  "desc": "哈哈哈",
+                  "name": "书籍-value"
+                }
+              ]
+            },
+            "version": "1.0.2",
+            "urls": [
+              "https://qiniu.canyuegongzi.xyz/lowcode_component/goods/1.0.2/umd.js",
+              "https://qiniu.canyuegongzi.xyz/lowcode_component/goods/1.0.2/style.css"
+            ],
+            "style": {}
+          },
+          {
+            "id": "7",
+            "thumb": "https://qiniu.canyuegongzi.xyz/lowcode_component/test.jpg",
+            "desc": "Header组件-描述",
+            "alias": "Header组件",
+            "name": "Header",
+            "libName": "Header",
+            "author": "Marvin",
+            "compType": "",
+            "sceneType": "h5",
+            "bizCode": "BIZ_FORM_BASE",
+            "latest": "1.0.1",
+            "status": 1,
+            "modal": {
+              "color": "#1b3dd6",
+              "text": "footer"
+            },
+            "version": "1.0.1",
+            "urls": [
+              "https://qiniu.canyuegongzi.xyz/lowcode_component/header/1.0.1/umd.js",
+              "https://qiniu.canyuegongzi.xyz/lowcode_component/header/1.0.1/style.css"
+            ],
+            "style": {}
+          },
+          {
+            "id": "9",
+            "thumb": "https://qiniu.canyuegongzi.xyz/lowcode_component/test.jpg",
+            "desc": "商品列表组件-描述",
+            "alias": "GoodsList组件",
+            "name": "GoodsList",
+            "libName": "GoodsList",
+            "author": "Marvin",
+            "compType": "",
+            "sceneType": "pc",
+            "bizCode": "BIZ_FORM_BASE",
+            "latest": "1.0.2",
+            "status": 1,
+            "modal": {
+              "items": [
+                {
+                  "desc": "灌灌灌灌灌",
+                  "name": "书籍-value",
+                  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_EO5dnPA48AXQTzu5D1BzTwtVo2SflzB6iKlr3U-KVlzLFvWdyJsZkg9Ug&s"
+                },
+                {
+                  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_EO5dnPA48AXQTzu5D1BzTwtVo2SflzB6iKlr3U-KVlzLFvWdyJsZkg9Ug&s",
+                  "desc": "哈哈哈哈",
+                  "name": "笔记本-value"
+                },
+                {
+                  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_EO5dnPA48AXQTzu5D1BzTwtVo2SflzB6iKlr3U-KVlzLFvWdyJsZkg9Ug&s",
+                  "desc": "哈哈哈",
+                  "name": "书籍-value"
+                }
+              ]
+            },
+            "version": "1.0.2",
+            "urls": [
+              "https://qiniu.canyuegongzi.xyz/lowcode_component/goods/1.0.2/umd.js",
+              "https://qiniu.canyuegongzi.xyz/lowcode_component/goods/1.0.2/style.css"
+            ],
+            "style": {}
+          }
+        ]
+      }
+    </script>-->
+    <script type="module" crossorigin src="/lowcode-platform/assets/index-D2t72-yQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/lowcode-platform/assets/index-B4-AdXpl.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="preview"></div>
+    <div id="testSandboxContainer"></div>
+    <!--<script src="https://qiniu.canyuegongzi.xyz/lowcode_component/header/1.0.1/umd.js"></script>
+    <script src="https://qiniu.canyuegongzi.xyz/lowcode_component/goods/1.0.2/umd.js"></script>-->
+
+
+    <script>
+
+      /*window.onload = function () {
+        setTimeout(() => {
+          const jd = document.createElement('script');
+          jd.src = 'https://qiniu.canyuegongzi.xyz/npm/antd-atom-materials/1.0.9/index.umd.js';
+
+          document.querySelector('head').append(jd)
+          console.log(window.React)
+        }, 2000)
+      }*/
+    </script>
+    <!--<script src="./public/page-render/umd.js"></script>-->
+  </body>
+</html>

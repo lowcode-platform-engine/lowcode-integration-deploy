@@ -1,0 +1,19 @@
+{
+  "name": "war",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "cssnano": "^7.0.1",
+    "postcss": "^8.4.38",
+    "posthtml": "^0.16.6",
+    "svgo": "^3.3.2"
+  }
+}

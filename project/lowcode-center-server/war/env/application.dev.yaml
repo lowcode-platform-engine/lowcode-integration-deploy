@@ -1,0 +1,52 @@
+serverConfig:
+  connectMicroservice: 3001
+  port: 10009
+  tokenSetTimeOut: 7200
+  globalPrefix: 'lowcode-center-server'
+mysqlConfig:
+  host: '192.168.0.102'
+  # host: '127.0.0.1'
+  userName: 'root'
+  password: '123Asd?123Asd?yf'
+  # password: '123456'
+  dataBaseName: 'b_lowcode_center_database'
+  port: 30001
+  # port: 3306
+mongodbConfig:
+  host: '127.0.0.1'
+  userName: 'root'
+  port: 7000
+  dataBaseName: ''
+  password: '123456'
+  authSource: 'admin'
+redisConfig:
+    name: 'default'
+    url: 'redis://:123Asd123Asd@cd-crs-mz15pu6q.sql.tencentcdb.com:25942'
+    # url: 'redis://:123Asd123Asd@192.168.0.102:6379'
+    #url: 'redis://:123Asd123Asd@113.31.104.90:6379'
+    #host: 'cd-crs-mz15pu6q.sql.tencentcdb.com'
+    port: 7012
+kafkaConfig:
+    url: ''
+    clientId: ''
+    groupId: ''
+rabbitMQConfig:
+    url: 'amqp://root:123ADD123ADD@192.168.0.102:5672'
+    name: ''
+    queue: ''
+emailConfig:
+    authPass: 'wrgkarqavxezdece'
+    fromUser: 'push_root_platform@qq.com'
+    user: 'push_root_platform@qq.com'
+nacos:
+    file-extension: yml
+    server-addr: 192.168.0.102:30849
+    discovery:
+        namespace: b7ea908e-df92-4634-83be-c9504bb2fe69
+        group: local
+
+serverList:
+    #user-center: 'http://192.168.0.102:10004'
+    user-center: 'http://127.0.0.1:10004'
+    file-center: 'http://127.0.0.1:10004'
+    application-center: 'http://127.0.0.1:10004'

@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "url": "https://qiniu.canyuegongzi.xyz/js/umd-1.0.js",
+      "thumb": "https://cdn.canyuegongzi.xyz/%E7%BC%96%E7%BB%84%2014.jpg",
+      "id": 1,
+      "alias": "umd-1.0",
+      "type": "component",
+      "version": "1.0",
+      "createdTime": 1111111111111333333333,
+      "committer": "Marvin",
+      "sceneType": "pc",
+      "name": "MyLib",
+      "status": 1,
+      "updatedTime": 1111111111111333333333
+    }
+  ]
+}
