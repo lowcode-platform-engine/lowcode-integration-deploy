@@ -27,13 +27,16 @@ COPY lowcode-platform ./lowcode-platform
 # 5. 安装 Nginx
 RUN apk add --no-cache nginx
 
-# 6. 配置 Nginx
+# 复制新的 nginx.conf 文件，覆盖默认的配置
+COPY nginx/conf/nginx.conf /etc/nginx/nginx.conf
+
+# 复制自定义的 default.conf 文件到 conf.d
 COPY nginx/conf/default.conf /etc/nginx/conf.d/default.conf
 
 # 7. 拷贝前端静态资源到 Nginx 目录
-RUN mkdir -p /var/www/lowcode-center-web /var/www/lowcode-platform
-COPY lowcode-center-web /var/www/lowcode-center-web
-COPY lowcode-platform /var/www/lowcode-platform
+RUN mkdir -p /var/www/html/lowcode-center-web /var/www/html/lowcode-platform
+COPY lowcode-center-web /var/www/html/lowcode-center-web
+COPY lowcode-platform /var/www/html/lowcode-platform
 
 # 8. 暴露端口
 EXPOSE 80
