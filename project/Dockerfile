@@ -40,7 +40,7 @@ COPY lowcode-platform /var/www/html/lowcode-platform
 
 # 8. 暴露端口
 EXPOSE 80
-EXPOSE 10009
+# EXPOSE 10009
 
 # 10. 启动脚本：通过 pm2 同时启动 Nginx 和 Node.js 服务
 CMD ["sh", "-c", "\
